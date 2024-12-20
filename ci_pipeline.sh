@@ -23,7 +23,7 @@ python3 main.py || { echo "Ошибка: не удалось собрать пр
 
 # 4. Выполнение unit-тестов
 echo "Выполнение unit-тестов..."
-python3 -m unittest discover -s . -p "test.py" || { echo "Ошибка: тесты не прошли."; exit 1; }
+python3 -m unittest discover -s . -p test.py || { echo "Ошибка: тесты не прошли."; exit 1; }
 
 # 5. Создание пакета установки
 echo "Создание пакета установки..."
